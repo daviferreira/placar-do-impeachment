@@ -17,6 +17,14 @@ import "tippy.js/themes/light.css";
 import "tippy.js/animations/shift-away.css";
 import styles from "./styles.module.css";
 
+function getAbbreviation(name) {
+  const nameArray = name.split(" ");
+  const firstName = nameArray[0];
+  const lastName = nameArray.pop();
+
+  return `${firstName ? firstName[0] : ""}${lastName ? lastName[0] : ""}`;
+}
+
 function getValues(data) {
   const items = {
     favor: 0,
@@ -38,7 +46,7 @@ function getValues(data) {
 }
 
 const Item = ({ node }) => {
-  const { id, Posicao } = node;
+  const { id, Posicao, Nome_Parlamentar } = node;
 
   const stance =
     Posicao === FAVOR ? "favor" : Posicao === AGAINST ? "against" : "neutral";
@@ -61,7 +69,7 @@ const Item = ({ node }) => {
         })}
         key={id}
       >
-        <span />
+        <span>{getAbbreviation(Nome_Parlamentar)}</span>
       </div>
     </Tippy>
   );

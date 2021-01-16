@@ -2,13 +2,13 @@
   --color-black: #222831;
   --color-white: #fafafa;
 
-  --color-favor: #54e346;
+  --color-favor: #61b15a;
   --color-against: #ec524b;
   --color-neutral: #e8eae6;
 
   --color-bullet: #var(--color-black);
 
-  --color-body-background: #1f4068;
+  --color-body-background: #09015f;
   --color-link: var(--color-body-background);
 
   --color-button: var(--color-against);
