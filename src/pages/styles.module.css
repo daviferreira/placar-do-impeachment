@@ -1,0 +1,89 @@
+@font-face {
+  font-family: msdos;
+  src: url("https://res.cloudinary.com/fc-/raw/upload/v1568102203/demos/msdos.ttf");
+}
+
+:root {
+  --color-black: #222831;
+  --color-white: #fafafa;
+
+  --color-favor: #54e346;
+  --color-against: #ec524b;
+  --color-neutral: #e8eae6;
+
+  --color-bullet: #var(--color-black);
+
+  --color-body-background: var(--color-black);
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--color-body-background);
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: msdos;
+  font-size: 1.3rem;
+  color: var(--color-black);
+}
+
+.root {
+  padding: 15px 30px 100px 30px;
+}
+
+.root::after {
+  content: "";
+  flex: auto;
+}
+
+.items {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2px;
+}
+
+.item {
+  position: relative;
+  height: 1.05em;
+  width: 1.05em;
+  font-size: 1.5em;
+  margin: 2px;
+  overflow: hidden;
+  text-align: center;
+  flex: 0 0 1;
+}
+
+.item span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+/* .item span::before {
+  content: "\2022";
+  font-size: 0.62em;
+  color: var(--color-bullet);
+  transform: translateY(3px);
+  opacity: 0.4;
+} */
+
+.item.favor span {
+  background: var(--color-favor);
+}
+
+.item.against span {
+  background: var(--color-against);
+}
+
+.item.neutral span {
+  background-color: var(--color-neutral);
+}
