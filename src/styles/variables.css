@@ -9,6 +9,7 @@
   --color-bullet: #var(--color-black);
 
   --color-body-background: #1f4068;
+  --color-link: var(--color-body-background);
 
   --item-width: 1.3em;
 }

@@ -6,6 +6,10 @@
   max-width: 100vw;
 }
 
+.root {
+  padding: 0.5em;
+}
+
 .header {
   align-items: center;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
@@ -68,4 +72,8 @@
 
 .root li:last-child {
   border-bottom: 0;
+}
+
+.root li a {
+  color: var(--color-link);
 }
