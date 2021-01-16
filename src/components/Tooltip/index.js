@@ -81,7 +81,7 @@ const Tooltip = ({
           </li>
         )}
       </ul>
-      {Link && <Tweet tweetId={Link.split("/").pop()} />}
+      {Link && Link.includes('twitter') && <Tweet tweetId={Link.split("/").pop()} />}
     </div>
   );
 };
