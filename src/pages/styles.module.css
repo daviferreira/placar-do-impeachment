@@ -1,8 +1,3 @@
-@font-face {
-  font-family: msdos;
-  src: url("https://res.cloudinary.com/fc-/raw/upload/v1568102203/demos/msdos.ttf");
-}
-
 :root {
   --color-black: #222831;
   --color-white: #fafafa;
@@ -13,7 +8,9 @@
 
   --color-bullet: #var(--color-black);
 
-  --color-body-background: var(--color-black);
+  --color-body-background: #1f4068;
+
+  --item-width: 1.3em;
 }
 
 html,
@@ -25,18 +22,61 @@ body {
 }
 
 body {
-  font-family: msdos;
-  font-size: 1.3rem;
-  color: var(--color-black);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: var(--color-white);
 }
 
 .root {
-  padding: 15px 30px 100px 30px;
+  padding: 1em 1em 100px 1em;
 }
 
 .root::after {
   content: "";
   flex: auto;
+}
+
+.header,
+.info ul {
+  align-items: center;
+  display: flex;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  margin: 0 0 2em;
+  padding: 0 0 1em;
+}
+
+.title {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.info {
+  margin-left: 1em;
+}
+
+.info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info li {
+  margin-right: 2em;
+}
+
+.info li:last-child {
+  margin-right: 0;
+}
+
+.info li h2 {
+  font-size: 1em;
+  margin: 0;
+  opacity: 0.6;
 }
 
 .items {
@@ -48,8 +88,8 @@ body {
 
 .item {
   position: relative;
-  height: 1.05em;
-  width: 1.05em;
+  height: var(--item-width);
+  width: var(--item-width);
   font-size: 1.5em;
   margin: 2px;
   overflow: hidden;
@@ -68,14 +108,6 @@ body {
   line-height: 1;
 }
 
-/* .item span::before {
-  content: "\2022";
-  font-size: 0.62em;
-  color: var(--color-bullet);
-  transform: translateY(3px);
-  opacity: 0.4;
-} */
-
 .item.favor span {
   background: var(--color-favor);
 }
@@ -86,4 +118,29 @@ body {
 
 .item.neutral span {
   background-color: var(--color-neutral);
+}
+
+.count {
+  align-items: center;
+  display: flex;
+  line-height: 1;
+}
+
+.count span {
+  display: block;
+  font-size: 2em;
+  margin-right: 0.2em;
+  transform: translateY(-2px);
+}
+
+.favor .count span {
+  color: var(--color-favor);
+}
+
+.against .count span {
+  color: var(--color-against);
+}
+
+.neutral .count span {
+  color: var(--color-neutral);
 }

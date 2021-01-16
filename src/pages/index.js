@@ -6,37 +6,44 @@ import { useStaticQuery, graphql } from "gatsby";
 import "normalize.css";
 import styles from "./styles.module.css";
 
-const A_FAVOR = "A favor do impeachment";
-const CONTRA = "Contra o impeachment";
+const FAVOR = "A favor do impeachment";
+const AGAINST = "Contra o impeachment";
 
 function getValues(data) {
-  const items = [
-    {
-      name: "A favor",
-      value: 0,
-    },
-    {
-      name: "Contra",
-      value: 0,
-    },
-    {
-      name: "Não se posicionou",
-      value: 0,
-    },
-  ];
+  const items = {
+    favor: 0,
+    against: 0,
+    neutral: 0,
+  };
 
-  data.forEach(({ node: { Posi__o } }) => {
-    if (Posi__o === A_FAVOR) {
-      items[0].value++;
-    } else if (Posi__o === CONTRA) {
-      items[1].value++;
+  data.forEach(({ node: { Posicao } }) => {
+    if (Posicao === FAVOR) {
+      items.favor++;
+    } else if (Posicao === AGAINST) {
+      items.against++;
     } else {
-      items[2].value++;
+      items.neutral++;
     }
   });
 
   return items;
 }
+
+const Item = ({ node: { id, Posicao } }) => {
+  const stance =
+    Posicao === FAVOR ? "favor" : Posicao === AGAINST ? "against" : "neutral";
+
+  return (
+    <div
+      className={classnames(styles.item, {
+        [styles[stance]]: stance,
+      })}
+      key={id}
+    >
+      <span />
+    </div>
+  );
+};
 
 // markup
 const IndexPage = () => {
@@ -44,7 +51,7 @@ const IndexPage = () => {
     votes: { edges },
   } = useStaticQuery(graphql`
     query {
-      votes: allVotesJson(sort: { fields: [Posi__o], order: ASC }) {
+      votes: allVotesJson(sort: { fields: [Posicao], order: ASC }) {
         edges {
           node {
             id
@@ -52,7 +59,7 @@ const IndexPage = () => {
             Link
             Nome_Parlamentar
             Partido
-            Posi__o
+            Posicao
             Telefone
             Titular_Suplente_Efetivado
             Twitter
@@ -63,29 +70,43 @@ const IndexPage = () => {
     }
   `);
 
+  const { favor, against, neutral } = getValues(edges);
+
   return (
     <main className={styles.root}>
-      <div className={styles.items}>
-        {edges.map(({ node: { id, Posi__o } }) => {
-          const stance =
-            Posi__o === A_FAVOR
-              ? "favor"
-              : Posi__o === CONTRA
-              ? "against"
-              : "neutral";
-
-          return (
-            <div
-              className={classnames(styles.item, {
-                [styles[stance]]: stance,
-              })}
-              key={id}
-            >
-              <span />
-            </div>
-          );
-        })}
-      </div>
+      <header className={styles.header}>
+        <h1 className={styles.title}>Placar do Impeachment</h1>
+        <div className={styles.info}>
+          <ul>
+            <li className={styles.favor}>
+              <h2>A favor</h2>
+              <div className={styles.count}>
+                <span>&bull;</span>
+                {favor}
+              </div>
+            </li>
+            <li className={styles.against}>
+              <h2>Contra</h2>
+              <div className={styles.count}>
+                <span>&bull;</span>
+                {against}
+              </div>
+            </li>
+            <li className={styles.neutral}>
+              <h2>N&atilde;o se posicionaram</h2>
+              <div className={styles.count}>
+                <span>&bull;</span>
+                {neutral}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section className={styles.items}>
+        {edges.map(({ node }) => (
+          <Item key={node.id} node={node} />
+        ))}
+      </section>
     </main>
   );
 };
