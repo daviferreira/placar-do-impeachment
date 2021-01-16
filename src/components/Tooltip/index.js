@@ -38,14 +38,21 @@ const Tooltip = ({
     >
       <div className={styles.header}>
         <h3>{Nome_Parlamentar}</h3>
-        {stance !== "favor" && Twitter && (
-          <a
-            className={styles.button}
-            href={`https://twitter.com/intent/tweet?text=Oi @${Twitter}, é hora de se posicionar a favor do impeachment!&hashtags=ImpeachmentBolsonaroUrgente`}
-          >
-            Pressionar!
-          </a>
-        )}
+        {stance !== "favor" &&
+          (Twitter ? (
+            <a
+              className={styles.button}
+              href={`https://twitter.com/intent/tweet?text=Oi @${Twitter}, é hora de se posicionar a favor do impeachment!&hashtags=ImpeachmentBolsonaroUrgente`}
+            >
+              Pressionar!
+            </a>
+          ) : (
+            Email && (
+              <a className={styles.button} href={`mailto:${Email}`}>
+                Pressionar!
+              </a>
+            )
+          ))}
       </div>
       <ul>
         <li>
@@ -81,7 +88,9 @@ const Tooltip = ({
           </li>
         )}
       </ul>
-      {Link && Link.includes('twitter') && <Tweet tweetId={Link.split("/").pop()} />}
+      {Link && Link.includes("twitter") && (
+        <Tweet tweetId={Link.split("/").pop()} />
+      )}
     </div>
   );
 };

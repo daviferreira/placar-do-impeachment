@@ -92,7 +92,8 @@ body {
   cursor: help;
   display: block;
   display: flex;
-  font-size: 0.5em;
+  font-size: 0.4em;
+  font-weight: bold;
   height: 100%;
   justify-content: center;
   line-height: 1;

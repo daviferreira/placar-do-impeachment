@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 
 import classnames from "classnames";
 import { useStaticQuery, graphql } from "gatsby";
@@ -9,13 +9,21 @@ import SEO from "../components/Seo";
 import ShareBar from "../components/ShareBar";
 import Tooltip from "../components/Tooltip";
 
-import { FAVOR, AGAINST } from "../constants";
+import { FAVOR, AGAINST, NEUTRAL } from "../constants";
 
 import "normalize.css";
 import "tippy.js/dist/tippy.css"; // optional
 import "tippy.js/themes/light.css";
 import "tippy.js/animations/shift-away.css";
 import styles from "./styles.module.css";
+
+function getSorted(edges, stance) {
+  return edges
+    .filter(({ node: { Posicao } }) => Posicao === stance)
+    .sort((a, b) =>
+      a.node.Nome_Parlamentar.localeCompare(b.node.Nome_Parlamentar)
+    );
+}
 
 function getAbbreviation(name) {
   const nameArray = name.split(" ");
@@ -81,9 +89,7 @@ const IndexPage = () => {
     votes: { edges },
   } = useStaticQuery(graphql`
     query {
-      votes: allVotesJson(
-        sort: { fields: [Posicao, Nome_Parlamentar], order: ASC }
-      ) {
+      votes: allVotesJson {
         edges {
           node {
             id
@@ -103,6 +109,15 @@ const IndexPage = () => {
   `);
 
   const { favor, against, neutral } = getValues(edges);
+
+  const sorted = useMemo(
+    () => [
+      ...getSorted(edges, FAVOR),
+      ...getSorted(edges, AGAINST),
+      ...getSorted(edges, NEUTRAL),
+    ],
+    [edges, FAVOR, AGAINST, NEUTRAL]
+  );
 
   return (
     <>
@@ -137,7 +152,7 @@ const IndexPage = () => {
           </div>
         </header>
         <section className={styles.items}>
-          {edges.map(({ node }, index) => (
+          {sorted.map(({ node }, index) => (
             <Item key={node.id} node={node} index={index} />
           ))}
         </section>
@@ -156,7 +171,7 @@ const IndexPage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              @sos_impeachmen
+              @sos_impeachment
             </a>
           </p>
           <ShareBar />
