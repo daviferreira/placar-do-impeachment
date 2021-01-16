@@ -1,3 +1,62 @@
+import votes from "./data/votes.json";
+
 export const FAVOR = "A favor do impeachment";
 export const AGAINST = "Contra o impeachment";
 export const NEUTRAL = "Não se pronunciou";
+
+export const PARTIES = [
+  "AVANTE",
+  "CIDADANIA",
+  "DEM",
+  "MDB",
+  "NOVO",
+  "PATRIOTA",
+  "PCdoB",
+  "PDT",
+  "PL",
+  "PODE",
+  "PP",
+  "PROS",
+  "PSB",
+  "PSC",
+  "PSD",
+  "PSDB",
+  "PSL",
+  "PSOL",
+  "PT",
+  "PTB",
+  "PV",
+  "REDE",
+  "REPUBLICANOS",
+  "SOLIDARIEDADE",
+];
+
+export const STATES = [
+  "AC",
+  "AL",
+  "AM",
+  "AP",
+  "BA",
+  "CE",
+  "DF",
+  "ES",
+  "GO",
+  "MA",
+  "MG",
+  "MS",
+  "MT",
+  "PA",
+  "PB",
+  "PE",
+  "PI",
+  "PR",
+  "RJ",
+  "RN",
+  "RO",
+  "RR",
+  "RS",
+  "SC",
+  "SE",
+  "SP",
+  "TO",
+];

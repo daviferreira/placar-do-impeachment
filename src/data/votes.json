@@ -286,6 +286,17 @@
     "Link": "https://twitter.com/CamiloPSB/status/1349864604961296385"
   },
   {
+    "Nome Parlamentar": "Professora Marcivania",
+    "UF": "AP",
+    "Partido": "PCdoB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5338",
+    "Email": "dep.professoramarcivania@camara.leg.br",
+    "Twitter": "profmarcivania",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.facebook.com/profmarcivania/posts/3240524735972380"
+  },
+  {
     "Nome Parlamentar": "Acácio Favacho",
     "UF": "AP",
     "Partido": "PROS",
@@ -341,17 +352,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Professora Marcivania",
-    "UF": "AP",
-    "Partido": "PCdoB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5338",
-    "Email": "dep.professoramarcivania@camara.leg.br",
-    "Twitter": "profmarcivania",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.facebook.com/profmarcivania/posts/3240524735972380"
-  },
-  {
     "Nome Parlamentar": "Vinicius Gurgel",
     "UF": "AP",
     "Partido": "PL",
@@ -396,6 +396,17 @@
     "Link": "https://twitter.com/DeputadoBacelar/status/1292955117528985602"
   },
   {
+    "Nome Parlamentar": "Félix Mendonça Júnior",
+    "UF": "BA",
+    "Partido": "PDT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5912",
+    "Email": "dep.felixmendoncajunior@camara.leg.br",
+    "Twitter": "FelixMendoncaJr",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.instagram.com/p/CAOC8WHlnPs/?igshid=19n799dowv3th"
+  },
+  {
     "Nome Parlamentar": "Jorge Solla",
     "UF": "BA",
     "Partido": "PT",
@@ -418,6 +429,28 @@
     "Link": "https://twitter.com/joseildoramos/status/1350139558457978892"
   },
   {
+    "Nome Parlamentar": "Lídice da Mata",
+    "UF": "BA",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5913",
+    "Email": "dep.lidicedamata@camara.leg.br",
+    "Twitter": "lidicedamata",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.instagram.com/p/CKFVLB-lKdf/"
+  },
+  {
+    "Nome Parlamentar": "Marcelo Nilo",
+    "UF": "BA",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5520",
+    "Email": "dep.marcelonilo@camara.leg.br",
+    "Twitter": "depmarcelonilo",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
+  },
+  {
     "Nome Parlamentar": "Valmir Assunção",
     "UF": "BA",
     "Partido": "PT",
@@ -438,6 +471,17 @@
     "Twitter": "waldenorpereira",
     "Posicao": "A favor do impeachment",
     "Link": "https://twitter.com/waldenorpereira/status/1262913162678059013"
+  },
+  {
+    "Nome Parlamentar": "Zé Neto",
+    "UF": "BA",
+    "Partido": "PT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5585",
+    "Email": "dep.zeneto@camara.leg.br",
+    "Twitter": "depzeneto",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://twitter.com/depzeneto/status/1350459441280331783"
   },
   {
     "Nome Parlamentar": "Arthur Oliveira Maia",
@@ -550,17 +594,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Félix Mendonça Júnior",
-    "UF": "BA",
-    "Partido": "PDT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5912",
-    "Email": "dep.felixmendoncajunior@camara.leg.br",
-    "Twitter": "FelixMendoncaJr",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.instagram.com/p/CAOC8WHlnPs/?igshid=19n799dowv3th"
-  },
-  {
     "Nome Parlamentar": "Igor Kannário",
     "UF": "BA",
     "Partido": "DEM",
@@ -625,28 +658,6 @@
     "Twitter": "LeurLomantoJr",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Lídice da Mata",
-    "UF": "BA",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5913",
-    "Email": "dep.lidicedamata@camara.leg.br",
-    "Twitter": "lidicedamata",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.instagram.com/p/CKFVLB-lKdf/"
-  },
-  {
-    "Nome Parlamentar": "Marcelo Nilo",
-    "UF": "BA",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5520",
-    "Email": "dep.marcelonilo@camara.leg.br",
-    "Twitter": "depmarcelonilo",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
   },
   {
     "Nome Parlamentar": "Márcio Marinho",
@@ -781,17 +792,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Zé Neto",
-    "UF": "BA",
-    "Partido": "PT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5585",
-    "Email": "dep.zeneto@camara.leg.br",
-    "Twitter": "depzeneto",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://twitter.com/depzeneto/status/1350459441280331783"
-  },
-  {
     "Nome Parlamentar": "André Figueiredo",
     "UF": "CE",
     "Partido": "PDT",
@@ -801,6 +801,17 @@
     "Twitter": "andrepdt12",
     "Posicao": "A favor do impeachment",
     "Link": "https://twitter.com/andrepdt12/status/1349877723582373889"
+  },
+  {
+    "Nome Parlamentar": "Danilo Forte",
+    "UF": "CE",
+    "Partido": "PSDB",
+    "Titular_Suplente_Efetivado": "E",
+    "Telefone": "3215-5219",
+    "Email": "dep.daniloforte@camara.leg.br",
+    "Twitter": "depdaniloforte",
+    "Posicao": "Não se pronunciou",
+    "Link": ""
   },
   {
     "Nome Parlamentar": "Denis Bezerra",
@@ -847,6 +858,17 @@
     "Link": "https://twitter.com/guimaraes13PT/status/1350134367092400130"
   },
   {
+    "Nome Parlamentar": "Leônidas Cristino",
+    "UF": "CE",
+    "Partido": "PDT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5948",
+    "Email": "dep.leonidascristino@camara.leg.br",
+    "Twitter": "joseleonidas",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.facebook.com/leonidascristinooficial/posts/3019066094845324"
+  },
+  {
     "Nome Parlamentar": "AJ Albuquerque",
     "UF": "CE",
     "Partido": "PP",
@@ -889,17 +911,6 @@
     "Twitter": "CelioStudart",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Danilo Forte",
-    "UF": "CE",
-    "Partido": "PSDB",
-    "Titular_Suplente_Efetivado": "E",
-    "Telefone": "3215-5219",
-    "Email": "dep.daniloforte@camara.leg.br",
-    "Twitter": "depdaniloforte",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://twitter.com/danilocabral__/status/1269684788635537412"
   },
   {
     "Nome Parlamentar": "Domingos Neto",
@@ -977,17 +988,6 @@
     "Twitter": "JuniorManoDep",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Leônidas Cristino",
-    "UF": "CE",
-    "Partido": "PDT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5948",
-    "Email": "dep.leonidascristino@camara.leg.br",
-    "Twitter": "joseleonidas",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.facebook.com/leonidascristinooficial/posts/3019066094845324"
   },
   {
     "Nome Parlamentar": "Moses Rodrigues",
@@ -1117,7 +1117,7 @@
     "Titular_Suplente_Efetivado": "T",
     "Telefone": "3215-5241",
     "Email": "dep.luismiranda@camara.leg.br",
-    "Twitter": "LuisMirandaUSA1",
+    "Twitter": "LuisMirandaUSA",
     "Posicao": "Não se pronunciou",
     "Link": ""
   },
@@ -1232,6 +1232,17 @@
     "Link": ""
   },
   {
+    "Nome Parlamentar": "Elias Vaz",
+    "UF": "GO",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5303",
+    "Email": "dep.eliasvaz@camara.leg.br",
+    "Twitter": "EliasVazGyn",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
+  },
+  {
     "Nome Parlamentar": "Rubens Otoni",
     "UF": "GO",
     "Partido": "PT",
@@ -1318,17 +1329,6 @@
     "Twitter": "zachariascalil",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Elias Vaz",
-    "UF": "GO",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5303",
-    "Email": "dep.eliasvaz@camara.leg.br",
-    "Twitter": "EliasVazGyn",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
   },
   {
     "Nome Parlamentar": "Flávia Morais",
@@ -1628,6 +1628,17 @@
     "Link": "https://twitter.com/aureacarolinax/status/1349749901417177089"
   },
   {
+    "Nome Parlamentar": "Júlio Delgado",
+    "UF": "MG",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5323",
+    "Email": "dep.juliodelgado@camara.leg.br",
+    "Twitter": "depjuliodelgado",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
+  },
+  {
     "Nome Parlamentar": "Leonardo Monteiro",
     "UF": "MG",
     "Partido": "PT",
@@ -1714,6 +1725,17 @@
     "Twitter": "RogerioCorreia_",
     "Posicao": "A favor do impeachment",
     "Link": "https://twitter.com/RogerioCorreia_/status/1350103008831541248"
+  },
+  {
+    "Nome Parlamentar": "Vilson da Fetaemg",
+    "UF": "MG",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5648",
+    "Email": "dep.vilsondafetaemg@camara.leg.br",
+    "Twitter": "vilsondafetaemg",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
   },
   {
     "Nome Parlamentar": "Alê Silva",
@@ -2013,17 +2035,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Júlio Delgado",
-    "UF": "MG",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5323",
-    "Email": "dep.juliodelgado@camara.leg.br",
-    "Twitter": "depjuliodelgado",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
-  },
-  {
     "Nome Parlamentar": "Lafayette de Andrada",
     "UF": "MG",
     "Partido": "REPUBLICANOS",
@@ -2154,17 +2165,6 @@
     "Twitter": "SubGonzagaMG",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Vilson da Fetaemg",
-    "UF": "MG",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5648",
-    "Email": "dep.vilsondafetaemg@camara.leg.br",
-    "Twitter": "vilsondafetaemg",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
   },
   {
     "Nome Parlamentar": "Weliton Prado",
@@ -2706,6 +2706,39 @@
     "Link": "https://twitter.com/carlosveraspt/status/1338480339367366661"
   },
   {
+    "Nome Parlamentar": "Danilo Cabral",
+    "UF": "PE",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5423",
+    "Email": "dep.danilocabral@camara.leg.br",
+    "Twitter": "danilo4010",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
+  },
+  {
+    "Nome Parlamentar": "Gonzaga Patriota",
+    "UF": "PE",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5430",
+    "Email": "dep.gonzagapatriota@camara.leg.br",
+    "Twitter": "IG: depgonzagapatriota",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
+  },
+  {
+    "Nome Parlamentar": "Marília Arraes",
+    "UF": "PE",
+    "Partido": "PT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5654",
+    "Email": "dep.mariliaarraes@camara.leg.br",
+    "Twitter": "MariliaArraes",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.instagram.com/mariliaarraes/"
+  },
+  {
     "Nome Parlamentar": "Milton Coelho",
     "UF": "PE",
     "Partido": "PSB",
@@ -2726,6 +2759,17 @@
     "Twitter": "tadeualencarpe",
     "Posicao": "A favor do impeachment",
     "Link": "https://twitter.com/TadeuAlencarPE/status/1262858947578548225"
+  },
+  {
+    "Nome Parlamentar": "Túlio Gadêlha",
+    "UF": "PE",
+    "Partido": "PDT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5360",
+    "Email": "dep.tuliogadelha@camara.leg.br",
+    "Twitter": "tuliogadelha",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.instagram.com/p/CKEh3uwHPzq/?igshid=1w1iv5tyl7qgo"
   },
   {
     "Nome Parlamentar": "Wolney Queiroz",
@@ -2783,17 +2827,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Danilo Cabral",
-    "UF": "PE",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5423",
-    "Email": "dep.danilocabral@camara.leg.br",
-    "Twitter": "danilo4010",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
-  },
-  {
     "Nome Parlamentar": "Eduardo da Fonte",
     "UF": "PE",
     "Partido": "PP",
@@ -2849,17 +2882,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Gonzaga Patriota",
-    "UF": "PE",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5430",
-    "Email": "dep.gonzagapatriota@camara.leg.br",
-    "Twitter": "IG: depgonzagapatriota",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
-  },
-  {
     "Nome Parlamentar": "Luciano Bivar",
     "UF": "PE",
     "Partido": "PSL",
@@ -2869,17 +2891,6 @@
     "Twitter": "Bivar1717",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Marília Arraes",
-    "UF": "PE",
-    "Partido": "PT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5654",
-    "Email": "dep.mariliaarraes@camara.leg.br",
-    "Twitter": "MariliaArraes",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.instagram.com/mariliaarraes/"
   },
   {
     "Nome Parlamentar": "Ossesio Silva",
@@ -2957,17 +2968,6 @@
     "Twitter": "Silvio_CFilho",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Túlio Gadêlha",
-    "UF": "PE",
-    "Partido": "PDT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5360",
-    "Email": "dep.tuliogadelha@camara.leg.br",
-    "Twitter": "tuliogadelha",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.instagram.com/p/CKEh3uwHPzq/?igshid=1w1iv5tyl7qgo"
   },
   {
     "Nome Parlamentar": "Átila Lira",
@@ -3080,6 +3080,17 @@
     "Link": ""
   },
   {
+    "Nome Parlamentar": "Aliel Machado",
+    "UF": "PR",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5220",
+    "Email": "dep.alielmachado@camara.leg.br",
+    "Twitter": "alielmachado",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
+  },
+  {
     "Nome Parlamentar": "Enio Verri",
     "UF": "PR",
     "Partido": "PT",
@@ -3111,6 +3122,17 @@
     "Twitter": "gustavofruet",
     "Posicao": "A favor do impeachment",
     "Link": "https://twitter.com/gustavofruet/status/1350235661824126981?s=21"
+  },
+  {
+    "Nome Parlamentar": "Luciano Ducci",
+    "UF": "PR",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5427",
+    "Email": "dep.lucianoducci@camara.leg.br",
+    "Twitter": "LucianoDucci",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
   },
   {
     "Nome Parlamentar": "Zeca Dirceu",
@@ -3168,17 +3190,6 @@
     "Link": "https://twitter.com/SargentoFAHUR/status/1283187913971437569"
   },
   {
-    "Nome Parlamentar": "Aliel Machado",
-    "UF": "PR",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5220",
-    "Email": "dep.alielmachado@camara.leg.br",
-    "Twitter": "alielmachado",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
-  },
-  {
     "Nome Parlamentar": "Aline Sleutjes",
     "UF": "PR",
     "Partido": "PSL",
@@ -3186,8 +3197,8 @@
     "Telefone": "3215-5550",
     "Email": "dep.alinesleutjes@camara.leg.br",
     "Twitter": "AlineSleutjes",
-    "Posicao": "Não se pronunciou",
-    "Link": ""
+    "Posicao": "Contra o impeachment",
+    "Link": "https://twitter.com/AlineSleutjes/status/1350419139966476288"
   },
   {
     "Nome Parlamentar": "Aroldo Martins",
@@ -3276,17 +3287,6 @@
     "Twitter": "leandredaideal",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Luciano Ducci",
-    "UF": "PR",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5427",
-    "Email": "dep.lucianoducci@camara.leg.br",
-    "Twitter": "LucianoDucci",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://apublica.org/impeachment-bolsonaro/wp-content/uploads/sites/38/2020/05/pedido0025.pdf"
   },
   {
     "Nome Parlamentar": "Luisa Canziani",
@@ -3582,8 +3582,8 @@
     "Telefone": "3215-5230",
     "Email": "dep.pauloganime@camara.leg.br",
     "Twitter": "pauloganime",
-    "Posicao": "Contra o impeachment",
-    "Link": "https://twitter.com/search?q=from%3A%40pauloganime%20impeachment&src=typed_query&f=live"
+    "Posicao": "Não se pronunciou",
+    "Link": ""
   },
   {
     "Nome Parlamentar": "Altineu Côrtes",
@@ -4180,6 +4180,17 @@
     "Link": ""
   },
   {
+    "Nome Parlamentar": "Afonso Motta",
+    "UF": "RS",
+    "Partido": "PDT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5528",
+    "Email": "dep.afonsomotta@camara.leg.br",
+    "Twitter": "afonso_motta",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.facebook.com/AfonsoMottaOpina/posts/3037367033010103"
+  },
+  {
     "Nome Parlamentar": "Bohn Gass",
     "UF": "RS",
     "Partido": "PT",
@@ -4288,17 +4299,6 @@
     "Twitter": "DepAfonsoHamm",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Afonso Motta",
-    "UF": "RS",
-    "Partido": "PDT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5528",
-    "Email": "dep.afonsomotta@camara.leg.br",
-    "Twitter": "afonso_motta",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.facebook.com/AfonsoMottaOpina/posts/3037367033010103"
   },
   {
     "Nome Parlamentar": "Alceu Moreira",
@@ -4532,6 +4532,17 @@
     "Link": "https://twitter.com/uczai/status/1350489288677404676"
   },
   {
+    "Nome Parlamentar": "Rodrigo Coelho",
+    "UF": "SC",
+    "Partido": "PSB",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5329",
+    "Email": "dep.rodrigocoelho@camara.leg.br",
+    "Twitter": "coelho_rodrigo",
+    "Posicao": "Contra o impeachment",
+    "Link": "https://twitter.com/coelho_rodrigo/status/1350420248164495362"
+  },
+  {
     "Nome Parlamentar": "Angela Amin",
     "UF": "SC",
     "Partido": "PP",
@@ -4686,17 +4697,6 @@
     "Link": ""
   },
   {
-    "Nome Parlamentar": "Rodrigo Coelho",
-    "UF": "SC",
-    "Partido": "PSB",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5329",
-    "Email": "dep.rodrigocoelho@camara.leg.br",
-    "Twitter": "coelho_rodrigo",
-    "Posicao": "Contra o impeachment",
-    "Link": "https://twitter.com/coelho_rodrigo/status/1350420248164495362"
-  },
-  {
     "Nome Parlamentar": "João Daniel",
     "UF": "SE",
     "Partido": "PT",
@@ -4816,6 +4816,17 @@
     "Twitter": "padilhando",
     "Posicao": "A favor do impeachment",
     "Link": "https://twitter.com/padilhando/status/1324422654816854016"
+  },
+  {
+    "Nome Parlamentar": "Arlindo Chinaglia",
+    "UF": "SP",
+    "Partido": "PT",
+    "Titular_Suplente_Efetivado": "T",
+    "Telefone": "3215-5966",
+    "Email": "dep.arlindochinaglia@camara.leg.br",
+    "Twitter": "achinaglia",
+    "Posicao": "A favor do impeachment",
+    "Link": "https://www.facebook.com/depchinaglia/posts/2786643378252238"
   },
   {
     "Nome Parlamentar": "Bozzella",
@@ -5091,17 +5102,6 @@
     "Twitter": "AlexisFonteyne",
     "Posicao": "Não se pronunciou",
     "Link": ""
-  },
-  {
-    "Nome Parlamentar": "Arlindo Chinaglia",
-    "UF": "SP",
-    "Partido": "PT",
-    "Titular_Suplente_Efetivado": "T",
-    "Telefone": "3215-5966",
-    "Email": "dep.arlindochinaglia@camara.leg.br",
-    "Twitter": "achinaglia",
-    "Posicao": "A favor do impeachment",
-    "Link": "https://www.facebook.com/depchinaglia/posts/2786643378252238"
   },
   {
     "Nome Parlamentar": "Arnaldo Jardim",
