@@ -116,7 +116,7 @@ const IndexPage = () => {
       ...getSorted(edges, AGAINST),
       ...getSorted(edges, NEUTRAL),
     ],
-    [edges, FAVOR, AGAINST, NEUTRAL]
+    [edges]
   );
 
   return (
