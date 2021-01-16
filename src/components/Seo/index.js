@@ -62,7 +62,7 @@ function SEO({ description = "", lang = "pt-BR", meta = [] }) {
         },
         {
           property: `og:image`,
-          content: `https://www.placardoimpeachment.com/images/fb.jpg`,
+          content: `https://www.impeachmentbolsonarourgente.com/images/fb.jpg`,
         },
         {
           property: `og:image:width`,
@@ -74,7 +74,7 @@ function SEO({ description = "", lang = "pt-BR", meta = [] }) {
         },
         {
           property: `og:url`,
-          content: `https://www.placardoimpeachment.com`,
+          content: `https://www.impeachmentbolsonarourgente.com`,
         },
         ...meta,
       ]}

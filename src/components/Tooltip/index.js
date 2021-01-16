@@ -36,7 +36,17 @@ const Tooltip = ({
         [styles[stance]]: stance,
       })}
     >
-      <h3>{Nome_Parlamentar}</h3>
+      <div className={styles.header}>
+        <h3>{Nome_Parlamentar}</h3>
+        {stance !== "favor" && Twitter && (
+          <a
+            className={styles.button}
+            href={`https://twitter.com/intent/tweet?text=Oi @${Twitter}, é hora de se posicionar a favor do impeachment!&hashtags=ImpeachmentBolsonaroUrgente`}
+          >
+            Pressionar!
+          </a>
+        )}
+      </div>
       <ul>
         <li>
           <strong>Partido:</strong> {Partido}

@@ -6,9 +6,29 @@
   max-width: 100vw;
 }
 
-.root h3 {
+.header {
+  align-items: center;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
   padding-bottom: 0.3em;
+}
+
+.header h3 {
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.button {
+  background-color: var(--color-against);
+  border-radius: 4px;
+  color: var(--color-white);
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  padding: 0.4em;
+  text-decoration: none;
 }
 
 .favor h3 {
