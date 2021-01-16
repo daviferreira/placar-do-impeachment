@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 import classnames from "classnames";
 import { useStaticQuery, graphql } from "gatsby";
 import Tippy from "@tippyjs/react";
 import { hideAll } from "tippy.js";
 
+import SEO from "../components/Seo";
 import Tooltip from "../components/Tooltip";
 
 import { FAVOR, AGAINST } from "../constants";
@@ -93,41 +94,44 @@ const IndexPage = () => {
   const { favor, against, neutral } = getValues(edges);
 
   return (
-    <main className={styles.root}>
-      <header className={styles.header}>
-        <h1 className={styles.title}>Placar do Impeachment</h1>
-        <div className={styles.info}>
-          <ul>
-            <li className={styles.favor}>
-              <h2>A favor</h2>
-              <div className={styles.count}>
-                <span>&bull;</span>
-                {favor}
-              </div>
-            </li>
-            <li className={styles.against}>
-              <h2>Contra</h2>
-              <div className={styles.count}>
-                <span>&bull;</span>
-                {against}
-              </div>
-            </li>
-            <li className={styles.neutral}>
-              <h2>N&atilde;o se posicionaram</h2>
-              <div className={styles.count}>
-                <span>&bull;</span>
-                {neutral}
-              </div>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <section className={styles.items}>
-        {edges.map(({ node }, index) => (
-          <Item key={node.id} node={node} index={index} />
-        ))}
-      </section>
-    </main>
+    <>
+      <SEO />
+      <main className={styles.root}>
+        <header className={styles.header}>
+          <h1 className={styles.title}>Placar do Impeachment</h1>
+          <div className={styles.info}>
+            <ul>
+              <li className={styles.favor}>
+                <h2>A favor</h2>
+                <div className={styles.count}>
+                  <span>&bull;</span>
+                  {favor}
+                </div>
+              </li>
+              <li className={styles.against}>
+                <h2>Contra</h2>
+                <div className={styles.count}>
+                  <span>&bull;</span>
+                  {against}
+                </div>
+              </li>
+              <li className={styles.neutral}>
+                <h2>N&atilde;o se posicionaram</h2>
+                <div className={styles.count}>
+                  <span>&bull;</span>
+                  {neutral}
+                </div>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <section className={styles.items}>
+          {edges.map(({ node }, index) => (
+            <Item key={node.id} node={node} index={index} />
+          ))}
+        </section>
+      </main>
+    </>
   );
 };
 
