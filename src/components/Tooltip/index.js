@@ -44,12 +44,12 @@ const Tooltip = ({
               className={styles.button}
               href={`https://twitter.com/intent/tweet?text=Oi @${Twitter}, é hora de se posicionar a favor do impeachment!&hashtags=ImpeachmentBolsonaroUrgente`}
             >
-              Pressionar!
+              Pressione!
             </a>
           ) : (
             Email && (
               <a className={styles.button} href={`mailto:${Email}`}>
-                Pressionar!
+                Pressione!
               </a>
             )
           ))}

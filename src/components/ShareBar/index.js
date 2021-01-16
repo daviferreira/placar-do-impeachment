@@ -44,7 +44,8 @@ ShareBar.propTypes = {
 };
 
 ShareBar.defaultProps = {
-  text: "Placar do Impeachment",
+  text:
+    "Saiba como seu deputado votaria se o impeachment de Jair Bolsonaro fosse hoje. Cobre seu representante.",
   url: "https://impeachmentbolsonarourgente.com/",
 };
 
