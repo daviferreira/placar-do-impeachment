@@ -11,5 +11,8 @@
   --color-body-background: #1f4068;
   --color-link: var(--color-body-background);
 
+  --color-button: var(--color-against);
+  --color-button-hover: #b94d48;
+
   --item-width: 1.3em;
 }

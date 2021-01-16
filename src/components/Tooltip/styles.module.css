@@ -25,7 +25,8 @@
 }
 
 .button {
-  background-color: var(--color-against);
+  background-color: var(--color-button);
+  box-shadow: inset 0 -3px 0 var(--color-button-hover);
   border-radius: 4px;
   color: var(--color-white);
   cursor: pointer;
@@ -33,6 +34,11 @@
   font-weight: bold;
   padding: 0.4em;
   text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--color-button-hover);
 }
 
 .favor h3 {
