@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Placar do Impeachment",
-    description: "",
+    description:
+      "Saiba como seu deputado votaria se o impeachment de Jair Bolsonaro fosse hoje. Cobre seu representante.",
     author: "Davi Ferreira",
   },
   plugins: [
