@@ -66,11 +66,11 @@ function SEO({ description = "", lang = "pt-BR", meta = [] }) {
         },
         {
           property: `og:image:width`,
-          content: 900,
+          content: 1200,
         },
         {
           property: `og:image:height`,
-          content: 506,
+          content: 675,
         },
         {
           property: `og:url`,
