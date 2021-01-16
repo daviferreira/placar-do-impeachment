@@ -141,6 +141,14 @@ const IndexPage = () => {
               target="_blank"
             >
               Planilha com todos os dados
+            </a>{" "}
+            via{" "}
+            <a
+              href="https://twitter.com/sos_impeachment"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              @sos_impeachmen
             </a>
           </p>
           <ShareBar />
