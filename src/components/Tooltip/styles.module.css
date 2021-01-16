@@ -11,6 +11,18 @@
   padding-bottom: 0.3em;
 }
 
+.favor h3 {
+  border-bottom-color: var(--color-favor);
+}
+
+.against h3 {
+  border-bottom-color: var(--color-against);
+}
+
+.neutral h3 {
+  border-bottom-color: var(--color-neutral);
+}
+
 .favor h3::after {
   content: " 👍";
 }

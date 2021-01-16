@@ -8,6 +8,12 @@ import { FAVOR, AGAINST } from "../../constants";
 
 import styles from "./styles.module.css";
 
+const TYPES = {
+  T: "Titular",
+  S: "Suplente",
+  E: "Efetivado",
+};
+
 const Tooltip = ({
   node: {
     Email,
@@ -39,7 +45,7 @@ const Tooltip = ({
           <strong>UF:</strong> {UF}
         </li>
         <li>
-          <strong>Tipo:</strong> {Titular_Suplente_Efetivado}
+          <strong>Mandato:</strong> {TYPES[Titular_Suplente_Efetivado]}
         </li>
         {Email && (
           <li>
