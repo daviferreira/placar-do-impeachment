@@ -1,0 +1,39 @@
+@import "../../styles/variables.css";
+
+:global(.tippy-box) {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  min-width: 460px;
+  max-width: 100vw;
+}
+
+.root h3 {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.3em;
+}
+
+.favor h3::after {
+  content: " 👍";
+}
+
+.against h3::after {
+  content: " 👎";
+}
+
+.neutral h3::after {
+  content: " 🤷";
+}
+
+.root ul {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.root li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.5em 0;
+}
+
+.root li:last-child {
+  border-bottom: 0;
+}

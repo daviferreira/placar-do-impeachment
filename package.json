@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-plugin-offline": "^3.8.0",
@@ -26,6 +27,8 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-twitter-widgets": "^1.9.5",
+    "tippy.js": "^6.2.7"
   }
 }

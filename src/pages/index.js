@@ -2,12 +2,18 @@ import * as React from "react";
 
 import classnames from "classnames";
 import { useStaticQuery, graphql } from "gatsby";
+import Tippy from "@tippyjs/react";
+import { hideAll } from "tippy.js";
+
+import Tooltip from "../components/Tooltip";
+
+import { FAVOR, AGAINST } from "../constants";
 
 import "normalize.css";
+import "tippy.js/dist/tippy.css"; // optional
+import "tippy.js/themes/light.css";
+import "tippy.js/animations/shift-away.css";
 import styles from "./styles.module.css";
-
-const FAVOR = "A favor do impeachment";
-const AGAINST = "Contra o impeachment";
 
 function getValues(data) {
   const items = {
@@ -29,19 +35,33 @@ function getValues(data) {
   return items;
 }
 
-const Item = ({ node: { id, Posicao } }) => {
+const Item = ({ node, index }) => {
+  const { id, Posicao } = node;
+
   const stance =
     Posicao === FAVOR ? "favor" : Posicao === AGAINST ? "against" : "neutral";
 
   return (
-    <div
-      className={classnames(styles.item, {
-        [styles[stance]]: stance,
-      })}
-      key={id}
+    <Tippy
+      animation="shift-away"
+      content={<Tooltip node={node} />}
+      delay={100}
+      duration={300}
+      interactive
+      interactiveBorder={20}
+      onShow={() => hideAll({ duration: 0 })}
+      placement="bottom-start"
+      theme="light"
     >
-      <span />
-    </div>
+      <div
+        className={classnames(styles.item, {
+          [styles[stance]]: stance,
+        })}
+        key={id}
+      >
+        <span />
+      </div>
+    </Tippy>
   );
 };
 
@@ -103,8 +123,8 @@ const IndexPage = () => {
         </div>
       </header>
       <section className={styles.items}>
-        {edges.map(({ node }) => (
-          <Item key={node.id} node={node} />
+        {edges.map(({ node }, index) => (
+          <Item key={node.id} node={node} index={index} />
         ))}
       </section>
     </main>
