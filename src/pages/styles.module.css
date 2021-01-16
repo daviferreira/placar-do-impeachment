@@ -119,6 +119,7 @@ body {
 .count {
   align-items: center;
   display: flex;
+  font-weight: bold;
   line-height: 1;
 }
 
@@ -139,6 +140,26 @@ body {
 
 .neutral .count span {
   color: var(--color-neutral);
+}
+
+.footer {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.footer p {
+  flex: 2;
+  margin: 0;
+}
+
+.footer p a {
+  color: var(--color-white);
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 767px) {

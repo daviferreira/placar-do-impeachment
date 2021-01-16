@@ -1,0 +1,30 @@
+:root {
+  --share-button-width: 32px;
+}
+
+.root {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  align-items: center;
+  border: 1px solid var(--color-white);
+  border-radius: 100%;
+  display: flex;
+  flex: 0 0 var(--share-button-width);
+  height: var(--share-button-width);
+  margin: 0 0.5rem;
+  justify-content: center;
+  width: var(--share-button-width);
+}
+
+.button svg {
+  height: 14px;
+  width: 14px;
+}
+
+.button svg path {
+  fill: var(--color-white);
+}

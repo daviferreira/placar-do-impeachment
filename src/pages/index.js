@@ -6,6 +6,7 @@ import Tippy from "@tippyjs/react";
 import { hideAll } from "tippy.js";
 
 import SEO from "../components/Seo";
+import ShareBar from "../components/ShareBar";
 import Tooltip from "../components/Tooltip";
 
 import { FAVOR, AGAINST } from "../constants";
@@ -36,7 +37,7 @@ function getValues(data) {
   return items;
 }
 
-const Item = ({ node, index }) => {
+const Item = ({ node }) => {
   const { id, Posicao } = node;
 
   const stance =
@@ -72,7 +73,9 @@ const IndexPage = () => {
     votes: { edges },
   } = useStaticQuery(graphql`
     query {
-      votes: allVotesJson(sort: { fields: [Posicao], order: ASC }) {
+      votes: allVotesJson(
+        sort: { fields: [Posicao, Nome_Parlamentar], order: ASC }
+      ) {
         edges {
           node {
             id
@@ -130,6 +133,18 @@ const IndexPage = () => {
             <Item key={node.id} node={node} index={index} />
           ))}
         </section>
+        <footer className={styles.footer}>
+          <p>
+            <a
+              href="https://docs.google.com/spreadsheets/u/1/d/1eXXnTiPr8I-KuRyV82p5rKXo8EVaoCybuuVuR9wp4A0"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Planilha com todos os dados
+            </a>
+          </p>
+          <ShareBar />
+        </footer>
       </main>
     </>
   );
