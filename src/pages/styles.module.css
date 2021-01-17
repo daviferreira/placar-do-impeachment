@@ -124,6 +124,7 @@ body {
 .footer p {
   flex: 2;
   margin: 0;
+  opacity: 0.6;
 }
 
 .footer p a {
