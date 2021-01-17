@@ -1,0 +1,50 @@
+.item {
+  border-radius: 100%;
+  border: 2px solid var(--color-body-background);
+  flex: 0 0 1;
+  font-size: 1.5em;
+  height: var(--item-width);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: var(--item-width);
+}
+
+.item.inactive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.item span {
+  align-items: center;
+  background-color: var(--color-neutral);
+  border-radius: 100%;
+  cursor: help;
+  display: block;
+  display: flex;
+  font-size: 0.4em;
+  font-weight: bold;
+  height: 100%;
+  justify-content: center;
+  line-height: 1;
+  position: relative;
+  width: 100%;
+}
+
+.item.favor span {
+  background-color: var(--color-favor);
+}
+
+.item.against span {
+  background-color: var(--color-against);
+}
+
+.item.neutral span {
+  background-color: var(--color-neutral);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.item span:hover {
+  box-shadow: inset 0 0 3px var(--color-black);
+  z-index: 3;
+}

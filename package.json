@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "import": "node ./tasks/import"
   },
   "dependencies": {
     "@reach/menu-button": "^0.12.1",

@@ -1,90 +1,18 @@
 import React, { useMemo, useState } from "react";
 
-import classnames from "classnames";
 import { useStaticQuery, graphql } from "gatsby";
-import Tippy from "@tippyjs/react";
-import { hideAll } from "tippy.js";
 
 import Filter from "../components/Filter";
+import Item from "../components/Item";
 import SEO from "../components/Seo";
 import ShareBar from "../components/ShareBar";
-import Tooltip from "../components/Tooltip";
 
 import { FAVOR, AGAINST, NEUTRAL, PARTIES } from "../constants";
 
+import { getSorted, getValues } from "../utils";
+
 import "normalize.css";
-import "tippy.js/dist/tippy.css"; // optional
-import "tippy.js/themes/light.css";
-import "tippy.js/animations/shift-away.css";
-
 import styles from "./styles.module.css";
-
-function getSorted(edges, stance) {
-  return edges
-    .filter(({ node: { Posicao } }) => Posicao === stance)
-    .sort((a, b) =>
-      a.node.Nome_Parlamentar.localeCompare(b.node.Nome_Parlamentar)
-    );
-}
-
-function getAbbreviation(name) {
-  const nameArray = name.split(" ");
-  const firstName = nameArray[0];
-  const lastName = nameArray.pop();
-
-  return `${firstName ? firstName[0] : ""}${lastName ? lastName[0] : ""}`;
-}
-
-function getValues(data, party) {
-  const items = {
-    favor: 0,
-    against: 0,
-    neutral: 0,
-  };
-
-  data.forEach(({ node: { Partido, Posicao } }) => {
-    if (Posicao === FAVOR && (party === "all" || Partido === party)) {
-      items.favor++;
-    } else if (Posicao === AGAINST && (party === "all" || Partido === party)) {
-      items.against++;
-    } else if (Posicao === NEUTRAL && (party === "all" || Partido === party)) {
-      items.neutral++;
-    }
-  });
-
-  return items;
-}
-
-const Item = ({ active, node }) => {
-  const { id, Posicao, Nome_Parlamentar } = node;
-
-  const stance =
-    Posicao === FAVOR ? "favor" : Posicao === AGAINST ? "against" : "neutral";
-
-  return (
-    <Tippy
-      animation="shift-away"
-      content={<Tooltip node={node} />}
-      delay={100}
-      duration={300}
-      interactive
-      interactiveBorder={20}
-      onShow={() => hideAll({ duration: 0 })}
-      placement="bottom-start"
-      theme="light"
-    >
-      <div
-        className={classnames(styles.item, {
-          [styles.inactive]: !active,
-          [styles[stance]]: stance,
-        })}
-        key={id}
-      >
-        <span>{getAbbreviation(Nome_Parlamentar)}</span>
-      </div>
-    </Tippy>
-  );
-};
 
 // markup
 const IndexPage = () => {
