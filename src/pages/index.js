@@ -94,6 +94,7 @@ const IndexPage = () => {
           node {
             id
             Email
+            Instagram
             Link
             Nome_Parlamentar
             Partido

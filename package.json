@@ -30,5 +30,10 @@
     "react-helmet": "^6.1.0",
     "react-twitter-widgets": "^1.9.5",
     "tippy.js": "^6.2.7"
+  },
+  "devDependencies": {
+    "csvtojson": "^2.0.10",
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.2.1"
   }
 }

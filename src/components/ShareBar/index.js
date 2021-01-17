@@ -20,7 +20,7 @@ const ShareBar = ({ text, url }) => (
     </a>
     <a
       className={styles.button}
-      href={`https://twitter.com/share?text=${text}&url=${url}&hashtags=ImpeachmentBolsonaroUrgente`}
+      href={`https://twitter.com/share?text=${text}&url=${url}&hashtags=ImpeachmentBolsonaroUrgente&via=sos_impeachment`}
       rel="noopener noreferrer"
       target="_blank"
       title="Compartilhe no Twitter"
