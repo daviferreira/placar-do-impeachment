@@ -1,6 +1,7 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
 import { useStaticQuery, graphql } from "gatsby";
+import { useQueryParam, StringParam } from "use-query-params";
 
 import Filter from "../components/Filter";
 import Item from "../components/Item";
@@ -14,10 +15,9 @@ import { getSorted, getValues } from "../utils";
 import "normalize.css";
 import styles from "./styles.module.css";
 
-// markup
 const IndexPage = () => {
-  const [party, setParty] = useState("all");
-  const [state, setState] = useState("all");
+  const [party, setParty] = useQueryParam("partido", StringParam);
+  const [state, setState] = useQueryParam("uf", StringParam);
 
   const {
     votes: { edges },
@@ -44,8 +44,6 @@ const IndexPage = () => {
     }
   `);
 
-  const { favor, against, neutral } = getValues(edges, { party, state });
-
   const sorted = useMemo(
     () => [
       ...getSorted(edges, FAVOR),
@@ -54,6 +52,14 @@ const IndexPage = () => {
     ],
     [edges]
   );
+
+  const partyFilter = PARTIES.includes(party) ? party : "all";
+  const stateFilter = STATES.includes(state) ? state : "all";
+
+  const { favor, against, neutral } = getValues(edges, {
+    party: partyFilter,
+    state: stateFilter,
+  });
 
   return (
     <>
@@ -64,7 +70,11 @@ const IndexPage = () => {
             <span>Placar do Impeachment</span>
             <div className={styles.filters} aria-hidden="true">
               <div className={styles.filter}>
-                <Filter onChange={setParty} options={PARTIES} value={party} />
+                <Filter
+                  onChange={setParty}
+                  options={PARTIES}
+                  value={partyFilter}
+                />
               </div>
               <div className={styles.filter}>
                 <Filter
@@ -74,7 +84,7 @@ const IndexPage = () => {
                   }}
                   onChange={setState}
                   options={STATES}
-                  value={state}
+                  value={stateFilter}
                 />
               </div>
             </div>
@@ -109,8 +119,8 @@ const IndexPage = () => {
           {sorted.map(({ node }, index) => (
             <Item
               active={
-                (party === "all" || node.Partido === party) &&
-                (state === "all" || node.UF === state)
+                (partyFilter === "all" || node.Partido === party) &&
+                (stateFilter === "all" || node.UF === state)
               }
               key={node.id}
               node={node}

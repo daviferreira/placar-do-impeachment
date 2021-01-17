@@ -26,6 +26,7 @@
     "gatsby-plugin-offline": "^3.8.0",
     "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-source-filesystem": "^2.9.1",
     "gatsby-transformer-json": "^2.9.0",
     "normalize.css": "^8.0.1",
@@ -33,7 +34,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-twitter-widgets": "^1.9.5",
-    "tippy.js": "^6.2.7"
+    "tippy.js": "^6.2.7",
+    "use-query-params": "^1.1.9"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

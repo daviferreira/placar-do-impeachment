@@ -31,7 +31,7 @@ const Filter = ({ labels, onChange, options, value }) => {
                 <MenuItem
                   className={styles.item}
                   key="all"
-                  onSelect={() => onChange("all")}
+                  onSelect={() => onChange()}
                 >
                   <span>{labels.all}</span>
                 </MenuItem>

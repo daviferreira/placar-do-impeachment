@@ -11,6 +11,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-offline",
     "gatsby-plugin-react-svg",
+    "gatsby-plugin-use-query-params",
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
