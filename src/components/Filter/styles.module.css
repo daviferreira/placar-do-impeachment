@@ -9,8 +9,10 @@
 .button {
   align-items: center;
   appearance: none;
-  background: var(--color-neutral);
-  border: 0;
+  background: var(--color-link);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  color: var(--color-neutral);
   cursor: pointer;
   display: flex;
   height: 100%;
