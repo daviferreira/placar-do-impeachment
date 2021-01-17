@@ -45,8 +45,14 @@ body {
   margin: 0;
 }
 
-.filter {
+.filters {
+  align-items: center;
+  display: flex;
   margin-left: 1em;
+}
+
+.filter {
+  margin: 0 0.3em;
 }
 
 .info {

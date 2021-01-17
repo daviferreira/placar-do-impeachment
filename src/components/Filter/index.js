@@ -10,14 +10,14 @@ import Arrow from "./arrow.svg";
 import "@reach/menu-button/styles.css";
 import styles from "./styles.module.css";
 
-const Filter = ({ onChange, options, value }) => {
+const Filter = ({ labels, onChange, options, value }) => {
   return (
     <div className={styles.filter}>
       <Menu>
         {({ isExpanded }) => (
           <>
             <MenuButton className={styles.button}>
-              <span>{value === "all" ? "Filtrar por partido" : value}</span>
+              <span>{value === "all" ? labels.button : value}</span>
               <span aria-hidden>
                 <Arrow
                   className={classnames(styles.arrow, {
@@ -33,7 +33,7 @@ const Filter = ({ onChange, options, value }) => {
                   key="all"
                   onSelect={() => onChange("all")}
                 >
-                  <span>Todos os partidos</span>
+                  <span>{labels.all}</span>
                 </MenuItem>
               )}
               {options
@@ -56,9 +56,20 @@ const Filter = ({ onChange, options, value }) => {
 };
 
 Filter.propTypes = {
+  labels: PropTypes.shape({
+    all: PropTypes.string,
+    button: PropTypes.string,
+  }),
   onChange: PropTypes.func.isRequired,
   options: PropTypes.array.isRequired,
   value: PropTypes.string,
+};
+
+Filter.defaultProps = {
+  labels: {
+    all: "Todos os partidos",
+    button: "Filtrar por partido",
+  },
 };
 
 export default Filter;

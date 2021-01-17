@@ -7,7 +7,7 @@ import Item from "../components/Item";
 import SEO from "../components/Seo";
 import ShareBar from "../components/ShareBar";
 
-import { FAVOR, AGAINST, NEUTRAL, PARTIES } from "../constants";
+import { FAVOR, AGAINST, NEUTRAL, PARTIES, STATES } from "../constants";
 
 import { getSorted, getValues } from "../utils";
 
@@ -17,6 +17,7 @@ import styles from "./styles.module.css";
 // markup
 const IndexPage = () => {
   const [party, setParty] = useState("all");
+  const [state, setState] = useState("all");
 
   const {
     votes: { edges },
@@ -43,7 +44,7 @@ const IndexPage = () => {
     }
   `);
 
-  const { favor, against, neutral } = getValues(edges, party);
+  const { favor, against, neutral } = getValues(edges, { party, state });
 
   const sorted = useMemo(
     () => [
@@ -61,8 +62,21 @@ const IndexPage = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>
             <span>Placar do Impeachment</span>
-            <div className={styles.filter} aria-hidden="true">
-              <Filter onChange={setParty} options={PARTIES} value={party} />
+            <div className={styles.filters} aria-hidden="true">
+              <div className={styles.filter}>
+                <Filter onChange={setParty} options={PARTIES} value={party} />
+              </div>
+              <div className={styles.filter}>
+                <Filter
+                  labels={{
+                    all: "Todos os estados",
+                    button: "Filtrar por UF",
+                  }}
+                  onChange={setState}
+                  options={STATES}
+                  value={state}
+                />
+              </div>
             </div>
           </h1>
           <div className={styles.info}>
@@ -94,7 +108,10 @@ const IndexPage = () => {
         <section className={styles.items}>
           {sorted.map(({ node }, index) => (
             <Item
-              active={party === "all" || node.Partido === party}
+              active={
+                (party === "all" || node.Partido === party) &&
+                (state === "all" || node.UF === state)
+              }
               key={node.id}
               node={node}
               index={index}
