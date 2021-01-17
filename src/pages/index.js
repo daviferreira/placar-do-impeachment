@@ -53,6 +53,10 @@ const IndexPage = () => {
     [edges]
   );
 
+  if (typeof window === "undefined") {
+    return null;
+  }
+
   const partyFilter = PARTIES.includes(party) ? party : "all";
   const stateFilter = STATES.includes(state) ? state : "all";
 
