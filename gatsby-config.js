@@ -9,9 +9,9 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-offline",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-use-query-params",
+    "gatsby-plugin-remove-serviceworker",
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
