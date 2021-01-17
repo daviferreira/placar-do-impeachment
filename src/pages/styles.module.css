@@ -123,13 +123,25 @@ body {
 
 .footer p {
   flex: 2;
+  font-size: 0.9em;
+  line-height: 1.4;
   margin: 0;
   opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.footer:hover p {
+  opacity: 1;
 }
 
 .footer p a {
   color: var(--color-white);
   font-size: 0.9em;
+  transition: color 0.2s;
+}
+
+.footer p a:hover {
+  color: var(--color-against);
 }
 
 @media screen and (max-width: 767px) {

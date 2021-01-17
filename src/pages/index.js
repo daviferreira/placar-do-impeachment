@@ -135,6 +135,22 @@ const IndexPage = () => {
             >
               @sos_impeachment
             </a>
+            <br />
+            <a
+              href="https://github.com/daviferreira/placar-do-impeachment"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Desenvolvido
+            </a>{" "}
+            por{" "}
+            <a
+              href="https://twitter.com/davitferreira"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Davi Ferreira
+            </a>
           </p>
           <ShareBar />
         </footer>

@@ -17,7 +17,12 @@
   height: var(--share-button-width);
   justify-content: center;
   margin: 0 0.5rem;
+  transition: background-color 0.2s;
   width: var(--share-button-width);
+}
+
+.button:hover {
+  background-color: var(--color-white);
 }
 
 .button svg {
@@ -27,4 +32,9 @@
 
 .button svg path {
   fill: var(--color-white);
+  transition: fill 0.2s;
+}
+
+.button:hover svg path {
+  fill: var(--color-link);
 }
