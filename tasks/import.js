@@ -34,6 +34,9 @@ fetch(url, settings)
           } else if (vote.Twitter.startsWith("IG: ")) {
             vote.Instagram = vote.Twitter.replace("IG: ", "");
             vote.Twitter = "";
+          } else if (vote.Twitter.startsWith("FB: ")) {
+            vote.Facebook = vote.Twitter.replace("FB: ", "");
+            vote.Twitter = "";
           }
         });
 

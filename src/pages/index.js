@@ -27,6 +27,7 @@ const IndexPage = () => {
           node {
             id
             Email
+            Facebook
             Instagram
             Link
             Nome_Parlamentar

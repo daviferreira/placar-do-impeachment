@@ -17,6 +17,7 @@ const TYPES = {
 const Tooltip = ({
   node: {
     Email,
+    Facebook,
     Instagram,
     Link,
     Nome_Parlamentar,
@@ -97,6 +98,18 @@ const Tooltip = ({
               target="_blank"
             >
               @{Instagram}
+            </a>
+          </li>
+        )}
+        {Facebook && (
+          <li>
+            <strong>Facebook:</strong>{" "}
+            <a
+              href={`https://facebook.com/${Facebook}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              @{Facebook}
             </a>
           </li>
         )}
