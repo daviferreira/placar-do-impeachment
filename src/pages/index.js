@@ -48,8 +48,8 @@ const IndexPage = () => {
   const sorted = useMemo(
     () => [
       ...getSorted(edges, FAVOR),
-      ...getSorted(edges, AGAINST),
       ...getSorted(edges, NEUTRAL),
+      ...getSorted(edges, AGAINST),
     ],
     [edges]
   );
