@@ -47,7 +47,7 @@ const Tooltip = ({
           (Twitter ? (
             <a
               className={styles.button}
-              href={`https://twitter.com/intent/tweet?text=Oi @${Twitter}, é hora de se posicionar a favor do impeachment!&hashtags=PlacarDoImpeachment&url=https://impeachmentbolsonarourgente.com/`}
+              href={`https://twitter.com/intent/tweet?text=Oi @${Twitter}, é hora de se posicionar a favor do impeachment!&hashtags=PlacarDoImpeachment`}
             >
               Pressione!
             </a>
