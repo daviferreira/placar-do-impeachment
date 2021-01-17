@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@reach/menu-button": "^0.12.1",
     "@tippyjs/react": "^4.2.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.26.1",

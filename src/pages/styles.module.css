@@ -39,8 +39,14 @@ body {
 }
 
 .title {
+  align-items: center;
+  display: flex;
   font-size: 1.3em;
   margin: 0;
+}
+
+.filter {
+  margin-left: 1em;
 }
 
 .info {
@@ -83,6 +89,10 @@ body {
   position: relative;
   text-align: center;
   width: var(--item-width);
+}
+
+.item.inactive {
+  opacity: 0.3;
 }
 
 .item span {
@@ -184,5 +194,9 @@ body {
 
   .info li:last-child {
     margin-bottom: 0;
+  }
+
+  .filter {
+    display: none;
   }
 }

@@ -1,20 +1,22 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 
 import classnames from "classnames";
 import { useStaticQuery, graphql } from "gatsby";
 import Tippy from "@tippyjs/react";
 import { hideAll } from "tippy.js";
 
+import Filter from "../components/Filter";
 import SEO from "../components/Seo";
 import ShareBar from "../components/ShareBar";
 import Tooltip from "../components/Tooltip";
 
-import { FAVOR, AGAINST, NEUTRAL } from "../constants";
+import { FAVOR, AGAINST, NEUTRAL, PARTIES } from "../constants";
 
 import "normalize.css";
 import "tippy.js/dist/tippy.css"; // optional
 import "tippy.js/themes/light.css";
 import "tippy.js/animations/shift-away.css";
+
 import styles from "./styles.module.css";
 
 function getSorted(edges, stance) {
@@ -53,7 +55,7 @@ function getValues(data) {
   return items;
 }
 
-const Item = ({ node }) => {
+const Item = ({ active, node }) => {
   const { id, Posicao, Nome_Parlamentar } = node;
 
   const stance =
@@ -73,6 +75,7 @@ const Item = ({ node }) => {
     >
       <div
         className={classnames(styles.item, {
+          [styles.inactive]: !active,
           [styles[stance]]: stance,
         })}
         key={id}
@@ -85,6 +88,8 @@ const Item = ({ node }) => {
 
 // markup
 const IndexPage = () => {
+  const [party, setParty] = useState("all");
+
   const {
     votes: { edges },
   } = useStaticQuery(graphql`
@@ -125,7 +130,12 @@ const IndexPage = () => {
       <SEO />
       <main className={styles.root}>
         <header className={styles.header}>
-          <h1 className={styles.title}>Placar do Impeachment</h1>
+          <h1 className={styles.title}>
+            <span>Placar do Impeachment</span>
+            <div className={styles.filter} aria-hidden="true">
+              <Filter onChange={setParty} options={PARTIES} value={party} />
+            </div>
+          </h1>
           <div className={styles.info}>
             <ul>
               <li className={styles.favor}>
@@ -154,7 +164,12 @@ const IndexPage = () => {
         </header>
         <section className={styles.items}>
           {sorted.map(({ node }, index) => (
-            <Item key={node.id} node={node} index={index} />
+            <Item
+              active={party === "all" || node.Partido === party}
+              key={node.id}
+              node={node}
+              index={index}
+            />
           ))}
         </section>
         <footer className={styles.footer}>
