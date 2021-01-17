@@ -115,7 +115,9 @@ const Tooltip = ({
         )}
       </ul>
       {Link && Link.includes("twitter") && (
-        <Tweet tweetId={Link.split("/").pop()} />
+        <div className={styles.tweet}>
+          <Tweet tweetId={Link.split("/").pop()} />
+        </div>
       )}
     </div>
   );
