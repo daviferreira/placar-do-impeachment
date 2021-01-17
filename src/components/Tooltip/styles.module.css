@@ -3,10 +3,21 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
   max-width: 100vw;
   min-width: 500px;
+  padding: 0;
 }
 
-.root {
-  padding: 0.5em;
+:global(.tippy-content) {
+  padding: 0 !important;
+}
+
+.header,
+.content {
+  padding: 1em;
+}
+
+.content {
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 .header {
@@ -14,7 +25,6 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5em;
   padding-bottom: 0.3em;
 }
 
@@ -83,13 +93,23 @@
   color: var(--color-link);
 }
 
-.tweet {
-  min-height: 300px;
+.loader {
+  align-items: center;
+  background-color: var(--color-neutral);
+  border-radius: 12px;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   :global(.tippy-box) {
     max-width: 100vw;
     min-width: 100vw;
+  }
+
+  .content {
+    max-height: 100vh;
   }
 }

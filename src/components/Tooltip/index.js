@@ -1,5 +1,5 @@
 import React from "react";
-import { Tweet } from "react-twitter-widgets";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 
 import classnames from "classnames";
 import PropTypes from "prop-types";
@@ -32,6 +32,9 @@ const Tooltip = ({
   const stance =
     Posicao === FAVOR ? "favor" : Posicao === AGAINST ? "against" : "neutral";
 
+  const tweetId =
+    Link && Link.includes("twitter.com") && Link.split("?")[0].split("/").pop();
+
   return (
     <div
       className={classnames(styles.root, {
@@ -56,69 +59,76 @@ const Tooltip = ({
             )
           ))}
       </div>
-      <ul>
-        <li>
-          <strong>Partido:</strong> {Partido}
-        </li>
-        <li>
-          <strong>UF:</strong> {UF}
-        </li>
-        <li>
-          <strong>Mandato:</strong> {TYPES[Titular_Suplente_Efetivado]}
-        </li>
-        {Email && (
+      <div className={styles.content}>
+        <ul>
           <li>
-            <strong>Email:</strong> <a href={`mailto:${Email}`}>{Email}</a>
+            <strong>Partido:</strong> {Partido}
           </li>
-        )}
-        {Telefone && (
           <li>
-            <strong>Telefone:</strong>{" "}
-            <a href={`tel:+55 61 ${Telefone}`}>{Telefone}</a>
+            <strong>UF:</strong> {UF}
           </li>
-        )}
-        {Twitter && (
           <li>
-            <strong>Twitter:</strong>{" "}
-            <a
-              href={`https://twitter.com/${Twitter}`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              @{Twitter}
-            </a>
+            <strong>Mandato:</strong> {TYPES[Titular_Suplente_Efetivado]}
           </li>
+          {Email && (
+            <li>
+              <strong>Email:</strong> <a href={`mailto:${Email}`}>{Email}</a>
+            </li>
+          )}
+          {Telefone && (
+            <li>
+              <strong>Telefone:</strong>{" "}
+              <a href={`tel:+55 61 ${Telefone}`}>{Telefone}</a>
+            </li>
+          )}
+          {Twitter && (
+            <li>
+              <strong>Twitter:</strong>{" "}
+              <a
+                href={`https://twitter.com/${Twitter}`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                @{Twitter}
+              </a>
+            </li>
+          )}
+          {Instagram && (
+            <li>
+              <strong>Instagram:</strong>{" "}
+              <a
+                href={`https://instagram.com/${Instagram}`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                @{Instagram}
+              </a>
+            </li>
+          )}
+          {Facebook && (
+            <li>
+              <strong>Facebook:</strong>{" "}
+              <a
+                href={`https://facebook.com/${Facebook}`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                @{Facebook}
+              </a>
+            </li>
+          )}
+        </ul>
+        {tweetId && (
+          <div className={styles.tweet}>
+            <TwitterTweetEmbed
+              tweetId={tweetId}
+              placeholder={
+                <div className={styles.loader}>Carregando tweet...</div>
+              }
+            />
+          </div>
         )}
-        {Instagram && (
-          <li>
-            <strong>Instagram:</strong>{" "}
-            <a
-              href={`https://instagram.com/${Instagram}`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              @{Instagram}
-            </a>
-          </li>
-        )}
-        {Facebook && (
-          <li>
-            <strong>Facebook:</strong>{" "}
-            <a
-              href={`https://facebook.com/${Facebook}`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              @{Facebook}
-            </a>
-          </li>
-        )}
-      </ul>
-      {Link && Link.includes("twitter") && (
-        <div className={styles.tweet}>
-          <Tweet tweetId={Link.split("/").pop()} />
-        </div>
-      )}
+      </div>
     </div>
   );
 };
