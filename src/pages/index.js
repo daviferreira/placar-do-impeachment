@@ -7,6 +7,7 @@ import Filter from "../components/Filter";
 import Item from "../components/Item";
 import SEO from "../components/Seo";
 import ShareBar from "../components/ShareBar";
+import Spinner from "../components/Spinner";
 
 import { FAVOR, AGAINST, NEUTRAL, PARTIES, STATES } from "../constants";
 
@@ -54,7 +55,7 @@ const IndexPage = () => {
   );
 
   if (typeof window === "undefined") {
-    return null;
+    return <Spinner />;
   }
 
   const partyFilter = PARTIES.includes(party) ? party : "all";
