@@ -17,6 +17,7 @@ import "tippy.js/animations/shift-away.css";
 import styles from "./styles.module.css";
 
 const Item = ({ active, node }) => {
+  // eslint-disable-next-line camelcase
   const { id, Posicao, Nome_Parlamentar } = node;
 
   const stance =

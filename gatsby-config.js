@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: "Placar do Impeachment",
@@ -14,7 +16,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "data",
-        path: `${__dirname}/src/data/`,
+        path: path.join(__dirname, `/src/data/`),
       },
     },
     {

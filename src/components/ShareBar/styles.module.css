@@ -15,8 +15,8 @@
   display: flex;
   flex: 0 0 var(--share-button-width);
   height: var(--share-button-width);
-  margin: 0 0.5rem;
   justify-content: center;
+  margin: 0 0.5rem;
   width: var(--share-button-width);
 }
 

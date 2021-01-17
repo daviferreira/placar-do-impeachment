@@ -1,6 +1,6 @@
 .item {
-  border-radius: 100%;
   border: 2px solid var(--color-body-background);
+  border-radius: 100%;
   flex: 0 0 1;
   font-size: 1.5em;
   height: var(--item-width);

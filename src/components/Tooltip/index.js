@@ -20,11 +20,11 @@ const Tooltip = ({
     Facebook,
     Instagram,
     Link,
-    Nome_Parlamentar,
+    Nome_Parlamentar, // eslint-disable-line camelcase
     Partido,
     Posicao,
     Telefone,
-    Titular_Suplente_Efetivado,
+    Titular_Suplente_Efetivado, // eslint-disable-line camelcase
     Twitter,
     UF,
   },
@@ -39,7 +39,7 @@ const Tooltip = ({
       })}
     >
       <div className={styles.header}>
-        <h3>{Nome_Parlamentar}</h3>
+        <h3>{Nome_Parlamentar}</h3> {/* eslint-disable-line camelcase */}
         {stance !== "favor" &&
           (Twitter ? (
             <a
