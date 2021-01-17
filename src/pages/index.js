@@ -35,19 +35,19 @@ function getAbbreviation(name) {
   return `${firstName ? firstName[0] : ""}${lastName ? lastName[0] : ""}`;
 }
 
-function getValues(data) {
+function getValues(data, party) {
   const items = {
     favor: 0,
     against: 0,
     neutral: 0,
   };
 
-  data.forEach(({ node: { Posicao } }) => {
-    if (Posicao === FAVOR) {
+  data.forEach(({ node: { Partido, Posicao } }) => {
+    if (Posicao === FAVOR && (party === "all" || Partido === party)) {
       items.favor++;
-    } else if (Posicao === AGAINST) {
+    } else if (Posicao === AGAINST && (party === "all" || Partido === party)) {
       items.against++;
-    } else {
+    } else if (Posicao === NEUTRAL && (party === "all" || Partido === party)) {
       items.neutral++;
     }
   });
@@ -114,7 +114,7 @@ const IndexPage = () => {
     }
   `);
 
-  const { favor, against, neutral } = getValues(edges);
+  const { favor, against, neutral } = getValues(edges, party);
 
   const sorted = useMemo(
     () => [
