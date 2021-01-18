@@ -42,9 +42,16 @@ fetch(url, settings)
 
         fs.writeFileSync(
           path.join(__dirname, "../", "src", "data", "votes.json"),
-          prettier.format(JSON.stringify(votes), {
-            parser: "json",
-          })
+          prettier.format(
+            JSON.stringify(
+              votes.sort((a, b) =>
+                a["Nome Parlamentar"].localeCompare(b["Nome Parlamentar"])
+              )
+            ),
+            {
+              parser: "json",
+            }
+          )
         );
       });
   });
