@@ -9,8 +9,6 @@ import Tooltip from "../Tooltip";
 
 import { FAVOR, AGAINST } from "../../constants";
 
-import { getAbbreviation } from "../../utils";
-
 import "tippy.js/dist/tippy.css"; // optional
 import "tippy.js/themes/light.css";
 import "tippy.js/animations/shift-away.css";
@@ -18,7 +16,7 @@ import styles from "./styles.module.css";
 
 const Item = ({ active, node }) => {
   // eslint-disable-next-line camelcase
-  const { id, Posicao, Nome_Parlamentar } = node;
+  const { id, Posicao, Abbreviation } = node;
 
   const stance =
     Posicao === FAVOR ? "favor" : Posicao === AGAINST ? "against" : "neutral";
@@ -42,7 +40,7 @@ const Item = ({ active, node }) => {
         })}
         key={id}
       >
-        <span>{getAbbreviation(Nome_Parlamentar)}</span>
+        <span>{Abbreviation}</span>
       </div>
     </Tippy>
   );

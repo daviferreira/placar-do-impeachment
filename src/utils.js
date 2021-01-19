@@ -1,13 +1,5 @@
 import { FAVOR, AGAINST, NEUTRAL } from "./constants";
 
-export function getAbbreviation(name) {
-  const nameArray = name.split(" ");
-  const firstName = nameArray[0];
-  const lastName = nameArray.pop();
-
-  return `${firstName ? firstName[0] : ""}${lastName ? lastName[0] : ""}`;
-}
-
 export function getSorted(edges, stance) {
   return edges
     .filter(({ node: { Posicao } }) => Posicao === stance)

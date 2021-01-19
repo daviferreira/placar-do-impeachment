@@ -13,6 +13,14 @@ const header =
   "Nome Parlamentar,UF,Partido,Titular_Suplente_Efetivado,Telefone,Email,Twitter,Posicao,Link";
 const validFields = header.split(",");
 
+function getAbbreviation(name) {
+  const nameArray = name.split(" ");
+  const firstName = nameArray[0];
+  const lastName = nameArray.pop();
+
+  return `${firstName ? firstName[0] : ""}${lastName ? lastName[0] : ""}`;
+}
+
 fetch(url, settings)
   .then((res) => res.text())
   .then((text) => {
@@ -28,6 +36,8 @@ fetch(url, settings)
               delete votes[index][key];
             }
           });
+
+          vote.Abbreviation = getAbbreviation(vote["Nome Parlamentar"]);
 
           if (vote.Twitter === "-") {
             vote.Twitter = "";
