@@ -28,6 +28,7 @@ const IndexPage = () => {
         edges {
           node {
             id
+            Abbreviation
             Email
             Facebook
             Instagram
