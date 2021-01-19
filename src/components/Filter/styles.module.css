@@ -1,3 +1,7 @@
+.filter {
+  position: relative;
+}
+
 .menu[data-reach-menu-list],
 .menu[data-reach-menu-items] {
   animation: slide-down 0.2s ease;
@@ -21,7 +25,32 @@
 }
 
 .button > span:first-child {
+  align-items: center;
+  display: flex;
   flex: 2;
+}
+
+.clear {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 17px;
+  justify-content: center;
+  margin-left: 0.5em;
+  position: absolute;
+  right: 30px;
+  top: 13px;
+  width: 17px;
+  z-index: 3;
+}
+
+.clear svg {
+  transform: scale(1.4);
+  transition: fill 0.2s;
+}
+
+.clear:hover svg path {
+  fill: var(--color-white);
 }
 
 .button,

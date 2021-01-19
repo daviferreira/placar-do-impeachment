@@ -77,6 +77,7 @@ const IndexPage = () => {
             <div className={styles.filters} aria-hidden="true">
               <div className={styles.filter}>
                 <Filter
+                  label="Filtrar por partido"
                   onChange={setParty}
                   options={PARTIES}
                   value={partyFilter}
@@ -84,10 +85,7 @@ const IndexPage = () => {
               </div>
               <div className={styles.filter}>
                 <Filter
-                  labels={{
-                    all: "Todos os estados",
-                    button: "Filtrar por UF",
-                  }}
+                  label="Filtrar por UF"
                   onChange={setState}
                   options={STATES}
                   value={stateFilter}

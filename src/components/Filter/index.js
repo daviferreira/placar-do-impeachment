@@ -6,18 +6,31 @@ import PropTypes from "prop-types";
 import { Menu, MenuList, MenuButton, MenuItem } from "@reach/menu-button";
 
 import Arrow from "./arrow.svg";
+import Clear from "./clear-circle.svg";
 
 import "@reach/menu-button/styles.css";
 import styles from "./styles.module.css";
 
-const Filter = ({ labels, onChange, options, value }) => {
+const Filter = ({ label, onChange, options, value }) => {
   return (
     <div className={styles.filter}>
+      {value !== "all" && (
+        <span
+          className={styles.clear}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            onChange();
+          }}
+        >
+          <Clear />
+        </span>
+      )}
       <Menu>
         {({ isExpanded }) => (
           <>
             <MenuButton className={styles.button}>
-              <span>{value === "all" ? labels.button : value}</span>
+              <span>{value === "all" ? label : value}</span>
               <span aria-hidden>
                 <Arrow
                   className={classnames(styles.arrow, {
@@ -27,26 +40,15 @@ const Filter = ({ labels, onChange, options, value }) => {
               </span>
             </MenuButton>
             <MenuList className={styles.menu}>
-              {value !== "all" && (
+              {options.map((key) => (
                 <MenuItem
                   className={styles.item}
-                  key="all"
-                  onSelect={() => onChange()}
+                  key={key}
+                  onSelect={() => onChange(key)}
                 >
-                  <span>{labels.all}</span>
+                  {key}
                 </MenuItem>
-              )}
-              {options
-                .filter((key) => key !== value)
-                .map((key) => (
-                  <MenuItem
-                    className={styles.item}
-                    key={key}
-                    onSelect={() => onChange(key)}
-                  >
-                    {key}
-                  </MenuItem>
-                ))}
+              ))}
             </MenuList>
           </>
         )}
@@ -56,20 +58,10 @@ const Filter = ({ labels, onChange, options, value }) => {
 };
 
 Filter.propTypes = {
-  labels: PropTypes.shape({
-    all: PropTypes.string,
-    button: PropTypes.string,
-  }),
+  label: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   options: PropTypes.array.isRequired,
   value: PropTypes.string,
-};
-
-Filter.defaultProps = {
-  labels: {
-    all: "Todos os partidos",
-    button: "Filtrar por partido",
-  },
 };
 
 export default Filter;
