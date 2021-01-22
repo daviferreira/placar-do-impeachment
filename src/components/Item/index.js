@@ -30,7 +30,7 @@ const Item = ({ active, node }) => {
       interactive
       interactiveBorder={20}
       onShow={() => hideAll({ duration: 0 })}
-      placement="bottom-start"
+      placement="top-start"
       theme="light"
     >
       <div
