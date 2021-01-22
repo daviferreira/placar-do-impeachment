@@ -117,14 +117,6 @@ const Tooltip = ({
               </a>
             </li>
           )}
-          {Link && !Link.includes("twitter.com") && (
-            <li>
-              <strong>Link:</strong>{" "}
-              <a href={Link} rel="noopener noreferrer" target="_blank">
-                {Link}
-              </a>
-            </li>
-          )}
         </ul>
         {tweetId && (
           <div className={styles.tweet}>
