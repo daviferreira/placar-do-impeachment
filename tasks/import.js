@@ -10,7 +10,7 @@ const url =
 const settings = { method: "GET" };
 
 const header =
-  "Nome Parlamentar,UF,Partido,Titular_Suplente_Efetivado,Telefone,Email,Twitter,Posicao,Link";
+  "Nome Parlamentar,UF,Partido,Titular_Suplente_Efetivado,Telefone,Email,Twitter,Posicao,Link,Instagram";
 const validFields = header.split(",");
 
 function getAbbreviation(name) {
